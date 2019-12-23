@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Gupter", sans-serif;
-  font-size: 1.1em;
+  font-size: 1rem;
   text-align: center;
   background-color: rgb(255, 255, 255);
   color: rgb(50, 50, 50);
@@ -18,87 +18,82 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 5%;
-  top: 0em;
+  padding: 0.5rem 1rem;
+  top: 0rem;
   width: 100%;
   background-color: rgba(255, 255, 255);
-  border-bottom: 1px solid rgb(70, 70, 70);
+  border-bottom: 0.1rem solid rgb(70, 70, 70);
   z-index: 1;
 }
 .logo {
-  max-width: 200px;
+  max-width: 10rem;
   cursor: pointer;
 }
 .nav_links li {
   display: inline-block;
-  padding: 0 0.2em;
+  padding: 0 0.2rem;
 }
 .nav_links li a {
   transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover {
-  font-size: 1em;
-  text-shadow: 1px 1px rgba(51, 51, 51);
+  font-size: 1.1rem;
 }
 
 /* Slider Stiling */
 .slider {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
-  height: 50em;
-  margin: 10em 0em 2.5em;
+  justify-content: center;
+  height: 50vh;
+  margin: 10rem 0rem 2.5rem;
   background-color: rgb(111, 78, 55);
 }
-.arrow,
-.playButton {
+.imageSlider {
+  height: 45vh;
+  width: 100%;
+  margin: 1rem;
+}
+.arrow, .playButton {
   cursor: pointer;
   background: transparent;
-  display: inline-block;
-  border: 3em solid transparent;
+  border: 3rem solid transparent;
   transition: all 0.3s ease 0s;
 }
 .left:hover {
-  border: 2.9em solid transparent;
+  border: 2.9rem solid transparent;
   border-right-color: rgb(255, 255, 255);
 }
 .right:hover {
-  border: 2.9em solid transparent;
+  border: 2.9rem solid transparent;
   border-left-color: rgb(255, 255, 255);
 }
 .playButton:hover {
   border-left-color: rgba(255, 255, 255);
 }
 .playButton:hover > div {
-  border: 0.4em solid rgba(255, 255, 255);
+  border: 0.4rem solid rgba(255, 255, 255);
 }
 .left {
   border-right-color: rgb(255, 255, 255);
-  margin-right: auto;
 }
 .right {
   border-left-color: rgb(255, 255, 255);
 }
-.imageSlider {
-  display: flex;
-  justify-content: center;
-  width: 60em;
-  height: 40em;
-  margin: 1em;
-}
 .playButton {
   position: absolute;
-  top: 40%;
+  left: 50%;
+  margin-left: -1.75rem;
+  top: calc(20vh + 10rem);
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 .playButton div {
   position: absolute;
-  width: 7em;
-  height: 7em;
-  top: -3.5em;
-  left: -5.2em;
-  border: 0.4em solid rgba(255, 255, 255, 0.5);
+  width: 7rem;
+  height: 7rem;
+  top: -3.5rem;
+  left: -5.25em;
+  border: 0.4rem solid rgba(255, 255, 255, 0.5);
   background: transparent;
   border-radius: 50%;
 }
@@ -106,23 +101,23 @@
 /* Main boddy Stiling */
 .content {
   width: 100%;
-  padding: 1em;
+  padding: 1rem;
 }
 .flex_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 1em 0 1em;
+  margin: 1rem 0rem 1rem;
 }
 .box,
 .boxText {
   flex-basis: 30%;
-  margin: 1em;
+  margin: 1rem;
 }
 .boxText {
-  padding: 0.1em;
-  border: 1px solid rgb(70, 70, 70);
+  padding: 0.1rem;
+  border: 0.1rem solid rgb(70, 70, 70);
 }
 .box_1 {
   flex: 3;
@@ -130,34 +125,34 @@
 .image {
   width: 100%;
   height: 100%;
-  padding: 0.2em;
+  padding: 0.2rem;
   object-fit: cover;
 }
 .footer {
   background-color: rgb(111, 78, 55, 0.1);
-  height: 10em;
+  height: 10rem;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 span.anchor {
   display: block;
   position: relative;
-  top: -6em;
+  top: -6rem;
   visibility: hidden;
 }
 
 /* Media query Step */
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 600px) {
   .slider {
     display: none;
   }
   .content {
-    margin-top: 10em;
+    margin-top: 10rem;
   }
   .flex_container {
     flex-direction: column;
