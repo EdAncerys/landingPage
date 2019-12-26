@@ -23,7 +23,7 @@ function flipRight() {
   } else {
     i = 0;
   }
-  console.log("flipRight Output", myArray[i], i);
+  // console.log("flipRight Output", myArray[i], i);
   imageSelector.setAttribute("src", myArray[i]);
 }
 // Button to the left function
@@ -33,7 +33,7 @@ function flipLeft() {
   } else {
     i = myArray.length - 1;
   }
-  console.log("flipLeft Output", myArray[i], i);
+  // console.log("flipLeft Output", myArray[i], i);
   imageSelector.setAttribute("src", myArray[i]);
 }
 
@@ -45,10 +45,10 @@ function startPlay() {
   count++;
   if (count % 2 === 0 || count === 0) {
     start();
-    console.log("im #1", "count: ", count);
+    // console.log("im #1", "count: ", count);
   } else if (count % 2 !== 0) {
     stop();
-    console.log("im #2", "count: ", count);
+    // console.log("im #2", "count: ", count);
   }
 }
 let t;
@@ -70,9 +70,21 @@ document.onkeydown = function(key) {
   switch (key.keyCode) {
     case 37:
       flipLeft(); // Key press Left
+      left.style.borderRightColor = "rgb(255, 255, 255)";
       break;
     case 39:
       flipRight(); // Key press Right
+      right.style.borderLeftColor = "rgb(255, 255, 255)";
+      break;
+  }
+};
+document.onkeyup = function(key) {
+  switch (key.keyCode) {
+    case 37:
+      left.style.borderRightColor = "rgb(255, 255, 255, 0.5)";
+      break;
+    case 39:
+      right.style.borderLeftColor = "rgb(255, 255, 255, 0.5)";
       break;
   }
 };
