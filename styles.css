@@ -51,8 +51,8 @@
   background-color: rgb(111, 78, 55);
 }
 .imageSlider {
-  height: 50vh;
-  width: 100;
+  height: 95%;
+  width: 70vw;
   margin: 1rem;
 }
 .arrow, .playButton {
