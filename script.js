@@ -89,3 +89,12 @@ document.onkeyup = function(key) {
   }
 };
 
+// Footer elements/button
+function hideMe() {
+  let about = document.querySelector(".about");
+  if (about.style.display === "none") {
+    about.style.display = "block";
+  } else {
+    about.style.display = "none";
+  }
+}

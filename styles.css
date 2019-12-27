@@ -51,8 +51,8 @@
   background-color: rgb(111, 78, 55);
 }
 .imageSlider {
-  height: 95%;
-  width: 70vw;
+  height: 50vh;
+  width: 85vw;
   margin: 1rem;
 }
 .arrow, .playButton {
@@ -117,7 +117,7 @@
 .boxText {
   border: 0.1rem solid rgb(70, 70, 70);
 }
-.box_1 {
+.box_3 {
   flex: 3;
 }
 .image {
@@ -125,10 +125,6 @@
   height: 100%;
   padding: 0.2rem;
   object-fit: cover;
-}
-.footer {
-  background-color: rgb(111, 78, 55, 0.1);
-  height: 10rem;
 }
 h1 {
   font-size: 2.5rem;
@@ -142,9 +138,43 @@ span.anchor {
   top: -6rem;
   visibility: hidden;
 }
+/* Footer Element Stiling */
+.footer {
+  background-color: rgb(111, 78, 55, 0.1);
+  width: 100%;
+  text-align: start;
+  margin-bottom: 0px;
+}
+.footer a {
+  color: red;
+}
+.button {
+  position: relative;
+  height: 3rem;
+  background-color: rgb(111, 78, 55);
+  color: rgba(255, 255, 255);
+  border: none; 
+  cursor: pointer; 
+  outline: none;
+  margin: 2rem 0.8rem;
+  padding: 1rem 2rem;
+}
+.contactMe {
+  position: relative;
+  top: 2rem;
+}
+.about {
+  display: none;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+.button:hover {
+  background-color: rgb(111, 78, 55, 0.9);
+  transition: all 0.3s ease 0s;
+  font-size: 0.95rem;
+}
 
 /* Media query Step */
-
 @media all and (max-width: 600px) {
   .slider {
     display: none;
