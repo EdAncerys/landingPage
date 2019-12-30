@@ -66,18 +66,6 @@
   background: transparent;
   border: 3rem solid transparent;
 }
-.left:hover {
-  border-right-color: rgb(255, 255, 255);
-}
-.right:hover {
-  border-left-color: rgb(255, 255, 255);
-}
-.playButton:hover {
-  border-left-color: rgba(255, 255, 255);
-}
-.playButton:hover > div {
-  border: 0.4rem solid rgba(255, 255, 255);
-}
 .left {
   border-right-color: rgb(255, 255, 255, 0.5);
 }
@@ -101,6 +89,18 @@
   background: transparent;
   border-radius: 50%;
 }
+.left:hover {
+  border-right-color: rgb(255, 255, 255);
+}
+.right:hover {
+  border-left-color: rgb(255, 255, 255);
+}
+.playButton:hover {
+  border-left-color: rgba(255, 255, 255);
+}
+.playButton:hover > div {
+  border: 0.4rem solid rgba(255, 255, 255);
+}
 
 /* Main boddy Stiling */
 .content {
@@ -121,7 +121,6 @@
   padding: 0.5rem;
 }
 .boxText, .boxTextFooter {
-  /* border: 0.05rem solid rgb(70, 70, 70); */
   box-shadow: 0rem 0.2rem 0.5rem rgb(70, 70, 70, 0.5);
 }
 .box_3 {
@@ -191,7 +190,7 @@ span.anchor {
 }
 
 /* Media query Step */
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
   .slider {
     display: none;
   }
