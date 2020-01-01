@@ -37,13 +37,6 @@
 .nav_links li h3 {
   font-size: 1.4rem;
 }
-.nav_links li:hover h3 {
-  transition: all 0.3s ease 0s;
-  border-top: 0.01rem solid rgb(70, 70, 70);
-  border-bottom: 0.01rem solid rgb(70, 70, 70);
-  padding: 0.3rem 0rem;
-  transform:scale(1.05);
-}
 
 /* Slider Stiling */
 .slider {
@@ -89,18 +82,6 @@
   background: transparent;
   border-radius: 50%;
 }
-.left:hover {
-  border-right-color: rgb(255, 255, 255);
-}
-.right:hover {
-  border-left-color: rgb(255, 255, 255);
-}
-.playButton:hover {
-  border-left-color: rgba(255, 255, 255);
-}
-.playButton:hover > div {
-  border: 0.4rem solid rgba(255, 255, 255);
-}
 
 /* Main boddy Stiling */
 .content {
@@ -145,11 +126,6 @@ span.anchor {
   top: calc(-10vh - 1rem);
   visibility: hidden;
 }
-.boxText:hover {
-  transition: all 0.5s ease 0s;
-  box-shadow: 0rem 0.5rem 1rem rgb(70, 70, 70, 0.5);
-  transform:scale(1.005);
-}
 
 /* Footer Element Stiling  */
 .footer {
@@ -183,11 +159,6 @@ span.anchor {
   margin-top: -1.5rem;
   margin-bottom: 2rem;
 }
-.button:hover {
-  transition: all 0.5s ease 0s;
-  box-shadow: 0rem 0.5rem 1rem rgb(70, 70, 70, 0.5);
-  transform:scale(1.005);
-}
 
 /* Media query Step */
 @media all and (max-width: 700px) {
@@ -202,6 +173,39 @@ span.anchor {
   }
   .box {
     display: none;
+  }
+}
+
+/* Media query Disable hover on touch screen devices */
+@media (hover: hover) {
+  .nav_links li:hover h3 {
+    transition: all 0.3s ease 0s;
+    border-top: 0.01rem solid rgb(70, 70, 70);
+    border-bottom: 0.01rem solid rgb(70, 70, 70);
+    padding: 0.3rem 0rem;
+    transform:scale(1.05);
+  }
+  .left:hover {
+    border-right-color: rgb(255, 255, 255);
+  }
+  .right:hover {
+    border-left-color: rgb(255, 255, 255);
+  }
+  .playButton:hover {
+    border-left-color: rgba(255, 255, 255);
+  }
+  .playButton:hover > div {
+    border: 0.4rem solid rgba(255, 255, 255);
+  }
+  .boxText:hover {
+    transition: all 0.5s ease 0s;
+    box-shadow: 0rem 0.5rem 1rem rgb(70, 70, 70, 0.5);
+    transform:scale(1.005);
+  }
+  .button:hover {
+    transition: all 0.5s ease 0s;
+    box-shadow: 0rem 0.5rem 1rem rgb(70, 70, 70, 0.5);
+    transform:scale(1.005);
   }
 }
 
